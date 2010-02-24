@@ -1,6 +1,6 @@
 %define	name	carpm
 %define	version	2.1
-%define	release	%mkrel	1
+%define	release	%mkrel	2
 
 Name:		%{name}
 Summary:	Script to help rpm's managing in command-line
