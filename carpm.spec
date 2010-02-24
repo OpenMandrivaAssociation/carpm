@@ -6,7 +6,7 @@ Name:		%{name}
 Summary:	Script to help rpm's managing in command-line
 Version:	%{version}
 Release:	%{release}
-Source0:	%{name}
+Source0:	%{name}-%{version}
 License:	GPLv3
 Group:		System/Configuration/Packaging
 URL:		http://carpm.sourceforge.net
@@ -33,4 +33,4 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%{_bindir}/%name
+%{_bindir}/%{name}-%{version}
