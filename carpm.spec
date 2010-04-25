@@ -1,12 +1,8 @@
-%define	name	carpm
-%define	version	2.2
-%define	release	%mkrel	1
-
-Name:		%{name}
+Name:		carpm
 Summary:	Script to help rpm's managing in command-line
-Version:	%{version}
-Release:	%{release}
-Source0:	%{name}-%{version}
+Version:	2.2
+Release:	%mkrel 2
+Source0:	%{name}-%{version}.tar.bz2
 License:	GPLv3
 Group:		System/Configuration/Packaging
 URL:		http://carpm.sourceforge.net
@@ -20,17 +16,19 @@ Requires:	bash
 Carpm is a script, a text tool for help you to managing your rpm and your rpm database.
 
 %prep
+%setup -q
 
 %build
 
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_bindir}
-install -m 755 %SOURCE0 %{buildroot}/%{_bindir}
+install -m 755 %name %{buildroot}/%{_bindir}
 
 %clean
 rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%{_bindir}/%{name}-%{version}
+%doc INSTALL COPYING
+%{_bindir}/%{name}
