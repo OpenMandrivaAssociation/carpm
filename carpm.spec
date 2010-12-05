@@ -1,7 +1,7 @@
 Name:		carpm
 Summary:	Script to help rpm's managing in command-line
 Version:	2.2
-Release:	%mkrel 2
+Release:	%mkrel 3
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPLv3
 Group:		System/Configuration/Packaging
