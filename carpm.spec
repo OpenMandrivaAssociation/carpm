@@ -13,7 +13,8 @@ Requires:	urpmi
 Requires:	bash
 
 %description
-Carpm is a script, a text tool for help you to managing your rpm and your rpm database.
+Carpm is a script, a text tool for help you to managing your rpm and your rpm
+database.
 
 %prep
 %setup -q
