@@ -5,7 +5,7 @@ Release:	5
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPLv3
 Group:		System/Configuration/Packaging
-URL:		http://carpm.sourceforge.net
+URL:		https://carpm.sourceforge.net
 BuildRequires:	bash
 Requires:	rpm
 Requires:	urpmi  
